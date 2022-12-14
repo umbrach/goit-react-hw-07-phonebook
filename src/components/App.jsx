@@ -2,10 +2,13 @@ import Container from './Container/Container';
 import ContactForm from './ContactForm/ContactForm';
 import Filter from './Filter/Filter';
 import ContactList from './ContactList/ContactList';
-
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchData } from 'redux/operations';
 
 export default function App() {
   // const [contacts, setContacts] = useState(
+  
   //   JSON.parse(localStorage.getItem('contacts')) ?? []
   // );
 
@@ -19,6 +22,12 @@ export default function App() {
   //     contact.name.toLowerCase().includes(normalizedName)
   //   );
   // };
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchData());
+  }, [dispatch]);
 
   return (
     <div>
