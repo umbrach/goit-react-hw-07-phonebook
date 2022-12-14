@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+
 const valueSlice = createSlice({
   name: 'contacts',
-  initialState: { contacts: [], filter: '' },
+  initialState: { contacts: [], filter: '', },
   reducers: {
     createUserAction(state, action) {
       state.contacts.unshift(action.payload);
@@ -18,6 +19,6 @@ const valueSlice = createSlice({
   },
 });
 
-export const { createUserAction, deleteUserAction, findUserAction } =
-  valueSlice.actions;
-export const usersReducer = valueSlice.reducer;
+
+export const { createUserAction, deleteUserAction, findUserAction } = valueSlice.actions;
+export const usersReducer = valueSlice.reducer
