@@ -27,7 +27,7 @@ const ContactList = () => {
     <ul className={s.list}>
       {visibleContacts.map(item => (
         <li className={s.item} key={item.id}>
-          {item.name}:<span className={s.phoneNumber}>{item.number}</span>
+          {item.name}:<span className={s.phoneNumber}>{item.phone}</span>
           <button
             className={s.button}
             id={item.id}
