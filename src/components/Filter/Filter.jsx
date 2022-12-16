@@ -3,13 +3,11 @@ import { findUserAction } from '../../redux/slice';
 import { useDispatch } from 'react-redux';
 
 const Filter = () => {
-  
   const dispatch = useDispatch();
 
-      const changeFilter = e => {
-        // setFilter(e.currentTarget.value);
-        dispatch(findUserAction(e.currentTarget.value));
-      };
+  const changeFilter = e => {
+    dispatch(findUserAction(e.currentTarget.value));
+  };
 
   return (
     <p>
@@ -25,6 +23,5 @@ const Filter = () => {
     </p>
   );
 };
-
 
 export default Filter;

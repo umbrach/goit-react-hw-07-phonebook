@@ -7,21 +7,6 @@ import { useDispatch } from 'react-redux';
 import { fetchData } from 'redux/operations';
 
 export default function App() {
-  // const [contacts, setContacts] = useState(
-  
-  //   JSON.parse(localStorage.getItem('contacts')) ?? []
-  // );
-
-  // const contacts = useSelector(state => state.contacts.contacts);
-
-  // const filter = useSelector(state => state.contacts.filter);
-
-  // const filterContacts = () => {
-  //   const normalizedName = filter.toLowerCase();
-  //   return contacts.filter(contact =>
-  //     contact.name.toLowerCase().includes(normalizedName)
-  //   );
-  // };
 
   const dispatch = useDispatch();
 
